@@ -7,7 +7,7 @@ class Factory : public Base {
 	private:
 		Base* root;
 	public:
-		virtual Base* parse (char** input, int length) {}
+		virtual Base* parse (char** input, int length) {};
 		virtual double evaluate() {
 			root->evaluate();
 		}
