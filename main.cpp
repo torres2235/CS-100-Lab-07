@@ -10,10 +10,9 @@
 
 using namespace std;
 
-int main() {
-	char** argv;
-	int argc;
-	string input;
+int main(int argc, char** argv) {
+	Factory* fact = new Factory();
 
-	getline(cin,input);
+	fact->parse(argv, argc);
 }
+
